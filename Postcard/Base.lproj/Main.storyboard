@@ -64,7 +64,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="189" width="326" height="30"/>
+                                    <rect key="frame" x="16" y="205" width="326" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7BP-Oo-kaf">
@@ -83,7 +83,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="301" width="326" height="30"/>
+                                    <rect key="frame" x="16" y="167" width="238" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonSendMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tb7-vg-RzJ"/>
@@ -92,18 +92,28 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D77-B3-gW2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="88" width="280" height="70"/>
+                                    <rect key="frame" x="16" y="72" width="326" height="37"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-oT-m1e">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="88" width="80" height="80"/>
+                                    <rect key="frame" x="262" y="117" width="80" height="80"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-GQ-lIa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="nameLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="125" width="238" height="34"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +123,7 @@
                                 <exclude reference="MnG-gg-eSL"/>
                                 <exclude reference="D77-B3-gW2"/>
                                 <exclude reference="0h5-oT-m1e"/>
+                                <exclude reference="eFL-GQ-lIa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,11 +133,13 @@
                                 <include reference="MnG-gg-eSL"/>
                                 <include reference="D77-B3-gW2"/>
                                 <include reference="0h5-oT-m1e"/>
+                                <include reference="eFL-GQ-lIa"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="Label" destination="D77-B3-gW2" id="E1m-Gh-5B6"/>
+                        <outlet property="nameLabel" destination="eFL-GQ-lIa" id="3Ty-PE-eA9"/>
                         <outlet property="sendButton" destination="MnG-gg-eSL" id="8Mc-g7-TzL"/>
                         <outlet property="textBoxMessage" destination="7BP-Oo-kaf" id="FoP-cV-gmh"/>
                         <outlet property="textBoxName" destination="98K-4G-Aez" id="apX-wp-3vF"/>
